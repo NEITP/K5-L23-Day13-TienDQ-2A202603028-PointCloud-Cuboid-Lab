@@ -64,7 +64,7 @@ Lấy từ `submission/D13-<MÃ SỐ>-bangA.csv`; số điểm lấy từ cột 
 | s04f38, 1, Truck | −0.275 m | 2.904 m | −1.727 m | 15.69 m | 15.70 m | 93.2° | Đáy gần mặt đường tham chiếu −1.7 m |
 | s03f42, 5, Car | −0.702 m | 1.500 m | −1.452 m | 74.65 m | 74.66 m | 267.2° | Vượt phạm vi 50 m; cần xem lại hoặc bỏ |
 
-Cuboid g?n nh?t l? `s01f07#4` (3.67 m, r = 3.82 m); xa nh?t l? `s03f42#5` (74.65 m, r = 74.66 m), ngo?i v?ng m?c ti?u. Xe con `s01f07#4` c? k?ch th??c 4.500 ? 1.800 ? 1.500 m, trong kho?ng sedan/hatchback. Cyclist `s02f40#4` c? 1.217 ? 0.670 ? 1.500 m: chi?u r?ng n?m trong kho?ng xe ??p, chi?u d?i v? cao th?p h?n kho?ng tham chi?u; c?n ki?m tra l?i ph?n xe/ng??i b? che ho?c h?p qu? ch?t. Yaw xe c?ng chi?u `s01f07#4` l? 268.3?; xe ng??c chi?u `s04f38#1` l? 93.2?.
+Cuboid gần nhất là `s01f07#4` (3.67 m, r = 3.82 m); xa nhất là `s03f42#5` (74.65 m, r = 74.66 m), ngoài vùng mục tiêu. Xe con `s01f07#4` có kích thước 4.500 × 1.800 × 1.500 m, trong khoảng sedan/hatchback. Cyclist `s02f40#4` có 1.217 × 0.670 × 1.500 m: chiều rộng nằm trong khoảng xe đạp, chiều dài và cao thấp hơn khoảng tham chiếu; cần kiểm tra lại phần xe/người bị che hoặc hộp quá chặt. Yaw xe cùng chiều `s01f07#4` là 268.3°; xe ngược chiều `s04f38#1` là 93.2°.
 
 Mật độ theo khoảng cách (4 cuboid ở các `dist_m` khác nhau):
 
@@ -75,9 +75,9 @@ Mật độ theo khoảng cách (4 cuboid ở các `dist_m` khác nhau):
 | s05f16, 10, Car | 21.59 m | 565 |
 | s05f16, 5, Car | 33.08 m | 128 |
 
-Trong c?c v? d? xe con, kho?ng c?ch t?ng t? 5.02 m l?n 33.08 m (6.6 l?n), s? ?i?m gi?m t? 4797 xu?ng 128 (c?n kho?ng 2.7%). Xu h??ng gi?m c?ng chi?u v?i ???ng cong b?i gi?ng, d? c?c cuboid l? v?t th? kh?c nhau n?n ??y kh?ng ph?i ph?p ?o c? ki?m so?t. So v?i slide, c?c v? d? ? 0?10, 10?20, 20?30 v? 30?50 m ??u c? s? ?i?m cao h?n gi? tr? tham chi?u. Sau l?n ??ng b? tr??c, `s03f42` t?ng t? 4 l?n 5 cuboid; cuboid m?i `#5` ? 74.65 m c?n xem l?i v? ngo?i ng??ng. Phi?u t? ki?m hi?n c? 0 c?nh b?o ???c gi? l?i.
+Trong các ví dụ xe con, khoảng cách tăng từ 5.02 m lên 33.08 m (6.6 lần), số điểm giảm từ 4797 xuống 128 (còn khoảng 2.7%). Xu hướng giảm cùng chiều với đường cong bài giảng, dù các cuboid là vật thể khác nhau nên đây không phải phép đo có kiểm soát. So với slide, các ví dụ ở 0–10, 10–20, 20–30 và 30–50 m đều có số điểm cao hơn giá trị tham chiếu. Sau lần đồng bộ trước, `s03f42` tăng từ 4 lên 5 cuboid; cuboid mới `#5` ở 74.65 m cần xem lại vì ngoài ngưỡng. Phiếu tự kiểm hiện có 0 cảnh báo được giữ lại.
 
-??i ki?m v?i b?n h?c ch?a c? th?ng tin trong h? s? hi?n t?i; c?n b? sung MSSV ng??i ki?m ch?o v? hai s? ?? so v?i B?ng A ?? ho?n t?t m?c n?y.
+Đối kiểm với bạn học chưa có thông tin trong hồ sơ hiện tại; cần bổ sung MSSV người kiểm chéo và hai số đã so với Bảng A để hoàn tất mục này.
 
 ## 6. Ý nghĩa của nhãn, cách dùng AI và điều còn chưa chắc
 Đo hộp 3D bằng mét giúp mô hình học vị trí và kích thước trong không gian, còn pixel thay đổi theo camera và khoảng cách. Vật ở xa có ít điểm hơn nên cần quy tắc nhất quán để phân biệt vật thật với nhiễu và tránh hộp quá rộng.
