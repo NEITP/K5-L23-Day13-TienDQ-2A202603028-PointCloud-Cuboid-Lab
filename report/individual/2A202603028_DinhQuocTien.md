@@ -65,7 +65,7 @@ Lấy từ `submission/D13-<MÃ SỐ>-bangA.csv`; số điểm lấy từ cột 
 | s03f42, 5, Car | −0.702 m | 1.500 m | −1.452 m | 74.65 m | 74.66 m | 267.2° | Vượt phạm vi 50 m; cần xem lại hoặc bỏ |
 
 Cuboid gần nhất là `s01f07#4` (3.67 m, r = 3.82 m); xa nhất là `s03f42#5` (74.65 m, r = 74.66 m), ngoài vùng mục tiêu. Xe con `s01f07#4` có kích thước 4.500 × 1.800 × 1.500 m, trong khoảng sedan/hatchback. Cyclist `s02f40#4` có 1.217 × 0.670 × 1.500 m: chiều rộng nằm trong khoảng xe đạp, chiều dài và cao thấp hơn khoảng tham chiếu; cần kiểm tra lại phần xe/người bị che hoặc hộp quá chặt. Yaw xe cùng chiều `s01f07#4` là 268.3°; xe ngược chiều `s04f38#1` là 93.2°.
-
+ 
 Mật độ theo khoảng cách (4 cuboid ở các `dist_m` khác nhau):
 
 | Cuboid (frame, idx, class) | dist_m | Số điểm (`points_in`) |
