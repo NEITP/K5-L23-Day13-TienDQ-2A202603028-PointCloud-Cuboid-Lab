@@ -83,7 +83,7 @@ Trong các ví dụ xe con, khoảng cách tăng từ 5.02 m lên 33.08 m (6.6 l
 Đo hộp 3D bằng mét giúp mô hình học vị trí và kích thước trong không gian, còn pixel thay đổi theo camera và khoảng cách. Vật ở xa có ít điểm hơn nên cần quy tắc nhất quán để phân biệt vật thật với nhiễu và tránh hộp quá rộng.
 
 - Công cụ: ChatGPT/Codex.
-- Câu hỏi chính: hỗ trợ đọc yêu cầu, rà dữ liệu point cloud và ảnh preview để tìm số lượng hoặc vị trí hộp cần xem lại.
-- Cách dùng: dùng các kết quả như gợi ý rà soát; cuboid được vẽ và lưu trong CVAT, cần người học kiểm tra cuối cùng.
+- Câu hỏi chính: hỗ trợ đọc yêu cầu bài lab và hiểu quy trình chạy các lệnh trong project.
+- Cách dùng: tôi dùng phần giải thích để nắm yêu cầu và tự thực hiện việc quan sát, gán nhãn, kiểm tra cuboid trong CVAT. Tôi tự chịu trách nhiệm với các nhãn đã lưu.
 
 Điều còn cần xác nhận: các hộp ngoài phạm vi 50 m và vật thể mơ hồ trong ảnh chiếu cần được đối chiếu lại trên point cloud. Không có ground truth để khẳng định độ chính xác chỉ từ phiếu tự kiểm.
